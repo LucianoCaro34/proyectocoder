@@ -3,14 +3,19 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
-body{
+
+body {
 	overflow-x: hidden;
 }
+
 .body {
 	background-color: black;
-	
+
 }
 
+$color1:white;
+$ancho:100%;
+$alto:100%;
 
 ul {
 	list-style: none;
@@ -24,7 +29,7 @@ a {
 #paginaWeb {
 	padding: 30px 50px;
 	position: relative;
-	width: 100%;
+	width: $ancho;
 	height: 100vh;
 	background-size: 1330px;
 	background-position: right bottom;
@@ -41,7 +46,7 @@ a {
 	top: 0;
 	left: 0;
 	position: fixed;
-	width: 100%;
+	width: $ancho;
 	padding: 10px 50px;
 	background-color: #F4F7FF;
 	z-index: 1;
@@ -53,12 +58,12 @@ a {
 	height: 40px;
 	padding-left: 60px;
 
-    li a{
-        padding: 10px 15px;
-	color: #6c707c;
-	font-size: 15px;
-	padding-top: 20px;
-    }
+	li a {
+		padding: 10px 15px;
+		color: #6c707c;
+		font-size: 15px;
+		padding-top: 20px;
+	}
 }
 
 .presentacion {
@@ -72,7 +77,7 @@ a {
 .active a,
 .menu li a:hover {
 	background-color: #292929;
-	color: #FFF !important;
+	color: $color1 !important;
 	transition: all ease 0.4s;
 }
 
@@ -84,21 +89,21 @@ a {
 	top: 50%;
 	transform: translate(-20%, -50%);
 
-    h2{
-        font-family: Poppins;
-	font-size: 40px;
-	margin: 0px;
-	color: #292929;
-    }
+	h2 {
+		font-family: Poppins;
+		font-size: 40px;
+		margin: 0px;
+		color: #292929;
+	}
 
-    a{
-        padding: 15px 25px;
-	color: #006400;
-	border: 1px solid black;
-	text-decoration: none;
-    }
+	a {
+		padding: 15px 25px;
+		color: #006400;
+		border: 1px solid black;
+		text-decoration: none;
+	}
 
-    
+
 
 }
 
@@ -115,14 +120,14 @@ a {
 
 .nombre a:hover {
 	background-color: violet;
-	color: white;
+	color: $color1;
 	font-weight: bold;
 	transition: all ease 0.3s;
 }
 
 /*----- sobre mi ----*/
 #sobreMi {
-	width: 100%;
+	width: $ancho;
 	background-color: #161616;
 	display: flex;
 	justify-content: center;
@@ -137,27 +142,29 @@ a {
 	width: 50%;
 	padding-top: 30px;
 
-    h2{
-        font-size: 4rem;
-	color: cornflowerblue;
-	text-shadow: 2px 2px 2px blue;
-    }
+	h2 {
+		font-size: 4rem;
+		color: cornflowerblue;
+		text-shadow: 2px 2px 2px blue;
+	}
 
-    h3{
-        font-size: 2rem;
-	color: #FFFFFF;
-	font-weight: 400;
-    }
-    h2,h3{
-        margin: 0px;
-	padding: 0px;
-    }
+	h3 {
+		font-size: 2rem;
+		color: $color1;
+		font-weight: 400;
+	}
 
-    p{
-        font-size: 1.2rem;
-	color: rgba(255, 255, 255, 0.90);
-    }
-    
+	h2,
+	h3 {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	p {
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.90);
+	}
+
 }
 
 
@@ -165,24 +172,25 @@ a {
 ol li {
 	list-style: none;
 	text-transform: capitalize;
-	color: white;
+	color: $color1;
 }
 
 .informacion {
 	padding-top: 80px;
 	padding-left: 100px;
-	color: white;
+	color: $color1;
 
-    div{
-        color: yellow;
-	text-align: center;
-	text-transform: uppercase;
-    }
-div p{
-    color: white;
-	text-transform: lowercase;
-	text-align: center;
-}
+	div {
+		color: yellow;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	div p {
+		color: $color1;
+		text-transform: lowercase;
+		text-align: center;
+	}
 }
 
 
@@ -190,20 +198,20 @@ div p{
 /*proyecto---*/
 #proyectos {
 	background-color: rgb(197, 191, 204);
-	width: 100%;
-	height: 100%;
+	width: $ancho;
+	height: $alto;
 
-    h2{
-        font-size: 50px;
-        text-align: center;
-        color: rgb(138, 24, 24);
-        text-shadow: 2px 2px 2px red; 
-    }
+	h2 {
+		font-size: 50px;
+		text-align: center;
+		color: rgb(138, 24, 24);
+		text-shadow: 2px 2px 2px red;
+	}
 }
 
 .carousel-inner img {
-	width: 100%;
-	height: 100%;
+	width: $ancho;
+	height: $alto;
 
 
 }
@@ -227,24 +235,24 @@ div p{
 	display: flex;
 	justify-content: space-around;
 	padding-top: 60px;
-	
+
 }
 
 .card {
 	width: 20rem;
 
-    img{
-        align-items: center;
-	height: 300px;
-	width: 300px;
-    }
+	img {
+		align-items: center;
+		height: 300px;
+		width: 300px;
+	}
 }
 
 
 
 /*contacto---*/
 #contacto {
-	width: 100%;
+	width: $ancho;
 	height: 90vh;
 	display: flex;
 	flex-direction: column;
@@ -254,19 +262,19 @@ div p{
 	margin: 20px 0px;
 	box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
 
-    form{
-        display: flex;
-	width: 70%;
-	height: 60vh;
-	background-color: #1A1A1A;
-	box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
-	border: 1px solid rgba(255, 255, 255, 0.01);
-    }
+	form {
+		display: flex;
+		width: 70%;
+		height: 60vh;
+		background-color: #1A1A1A;
+		box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+		border: 1px solid rgba(255, 255, 255, 0.01);
+	}
 }
 
 .escribeme {
 	font-size: 2rem;
-	color: white;
+	color: $color1;
 	font-family: calibri;
 	margin: 10px;
 	padding: 5px;
@@ -278,9 +286,8 @@ div p{
 
 
 .contactame {
-	width: 4
-    0%;
-	height: 100%;
+	width: 40%;
+	height: $alto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -288,31 +295,32 @@ div p{
 
 .contacto-right {
 	width: 60%;
-	height: 100%;
+	height: $alto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	border-left: 1px solid rgba(255, 255, 255, 0.08);
 
-    button{
-    width: 127%;
-	height: 50px;
-	background-color: #63D9FF;
-	font-weight: bold;
-	color: #1B1B1B;
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-    }
-    textarea{
-    width: 130%;
-	height: 320px;
-	border: none;
-	outline: none;
-	background-color: transparent;
-	color: #EBEBEB;
-	font-size: 16px;
-    }
+	button {
+		width: 127%;
+		height: 50px;
+		background-color: #63D9FF;
+		font-weight: bold;
+		color: #1B1B1B;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	textarea {
+		width: 130%;
+		height: 320px;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		color: #EBEBEB;
+		font-size: 16px;
+	}
 }
 
 .name,
@@ -337,7 +345,7 @@ div p{
 	outline: none;
 	background-color: transparent;
 	border-bottom: 1px solid #929292;
-	color: #FFFFFF;
+	color: $color1;
 	margin: 10px 0px;
 }
 
@@ -346,11 +354,11 @@ div p{
 .mensaje {
 	margin: 20px;
 
-    font{
-        font-size: 18px;
-	color: white;
-	font-family: calibri;
-    }
+	font {
+		font-size: 18px;
+		color: $color1;
+		font-family: calibri;
+	}
 }
 
 
@@ -360,36 +368,37 @@ div p{
 .presentacion5 {
 	padding-left: 20px;
 	height: 100px;
-	width: 100%;
+	width: $ancho;
 	text-align: center;
 	padding-top: 10px;
 
-    h1{
-        text-transform: uppercase;
-	font-family: 'Times New Roman', Times, serif;
-    }
-    h2{
-        font-size: 20px; 
-    }
+	h1 {
+		text-transform: uppercase;
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
 }
 
 
 
 .detalles3 {
-	color: white;
+	color: $color1;
 }
 
 .infoIzquierda {
 	padding-top: 20px;
 	text-align: center;
 	background: rgb(9, 143, 143);
-	height: 100%;
+	height: $alto;
 	width: 400px;
-	color: white;
+	color: $color1;
 }
 
 .lineaVertical {
-	border-left: thick solid white;
+	border-left: thick solid $color1;
 }
 
 article h3 {
@@ -409,8 +418,7 @@ dt {
 	text-align: center;
 	padding-left: 10px;
 
-ul{
-    list-style: circle;   
-}	
+	ul {
+		list-style: circle;
+	}
 }
-

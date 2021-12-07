@@ -70,7 +70,7 @@ a {
 .active a,
 .menu li a:hover {
   background-color: #292929;
-  color: #FFF !important;
+  color: white !important;
   transition: all ease 0.4s;
 }
 
@@ -131,10 +131,11 @@ a {
 }
 .sobreMi--text h3 {
   font-size: 2rem;
-  color: #FFFFFF;
+  color: white;
   font-weight: 400;
 }
-.sobreMi--text h2, .sobreMi--text h3 {
+.sobreMi--text h2,
+.sobreMi--text h3 {
   margin: 0px;
   padding: 0px;
 }
@@ -241,7 +242,7 @@ ol li {
 }
 
 .contactame {
-  width: 4 0%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -297,7 +298,7 @@ ol li {
   outline: none;
   background-color: transparent;
   border-bottom: 1px solid #929292;
-  color: #FFFFFF;
+  color: white;
   margin: 10px 0px;
 }
 
