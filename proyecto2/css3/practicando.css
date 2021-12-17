@@ -23,48 +23,43 @@ a {
 /*----- Inicio Web ----*/
 #paginaWeb {
   padding: 30px 50px;
-  position: relative;
   width: 100%;
   height: 100vh;
-  background-size: 1330px;
-  background-position: right bottom;
   background-color: #edf1fd;
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   text-transform: uppercase;
-  gap: 2px;
   font-family: calibri;
   top: 0;
   left: 0;
   position: fixed;
-  width: 100%;
-  padding: 10px 50px;
   background-color: #F4F7FF;
   z-index: 1;
 }
 
 .menu {
   display: flex;
-  justify-content: space-around;
-  height: 40px;
-  padding-left: 60px;
+  align-items: flex-end;
+  height: 20px;
+  padding-left: 10px;
 }
 .menu li a {
   padding: 10px 15px;
   color: #6c707c;
   font-size: 15px;
-  padding-top: 20px;
 }
 
 .presentacion {
   font-size: 25px;
   font-weight: bold;
   color: #292929;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-right: 30px;
 }
 
 .active a,
@@ -89,22 +84,19 @@ a {
   color: #292929;
 }
 .nombre a {
-  padding: 15px 25px;
-  color: #006400;
-  border: 1px solid black;
+  font-size: 25px;
+  color: #050a4d;
   text-decoration: none;
+}
+.nombre a:hover {
+  background-color: #410941;
+  color: white;
+  transition: all ease 0.3s;
 }
 
 .detalles {
   color: #6c707c;
   font-size: 16px;
-}
-
-.nombre a:hover {
-  background-color: violet;
-  color: white;
-  font-weight: bold;
-  transition: all ease 0.3s;
 }
 
 /*----- sobre mi ----*/
@@ -221,7 +213,9 @@ ol li {
   justify-content: center;
   align-items: center;
   background-color: black;
-  margin: 20px 0px;
+  position: relative;
+  padding: 20px 0px;
+  bottom: 0px;
   box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
 }
 #contacto form {
