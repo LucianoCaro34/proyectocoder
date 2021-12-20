@@ -35,11 +35,22 @@ a {
 	height: 100vh;
 	background-color: #edf1fd;
 }
+ .nav--input{
+	display: none;
+}
+.nav--input:checked + .menu{
+	background-color: salmon;
+}
+.nav--label{
+	display: none;
+}
 
 .nav {
 	display: flex;
-	justify-content: space-around;
-	width: 100px;
+	justify-content: space-between;
+	align-items: center;
+	width: $ancho;
+	height: 80px;
 	text-transform: uppercase;
 	font-family: calibri;
 	top: 0;
@@ -48,30 +59,30 @@ a {
 	background-color: #F4F7FF;
 	z-index: 1;
 }
-
 .menu {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	display: grid;
+	grid-auto-flow: column;
+	padding-top: 7px;
+	padding-left: 20px;
+	width: auto;
 	height: 20px;
 	
 	
 
 	li a {
-		
 		padding: 10px 15px;
 		color: #6c707c;
-		font-size: 15px;
+		font-size: 17px;
 	}
 }
 
 .presentacion {
+	width: auto;
 	font-size: 25px;
 	font-weight: bold;
 	color: #292929;
 	padding-top: 10px ;
-	
-
+	padding-left: 10px;
 }
 
 .active a,
@@ -419,5 +430,36 @@ dt {
 
 	ul {
 		list-style: circle;
+	}
+}
+@media screen and (max-width:800px){
+	#paginaWeb{
+		width: 800px;
+	}
+	.nav{
+		display: flex;
+		justify-content: center;
+		width: 800px;
+		position: fixed;
+		z-index: 1;
+	}
+	.menu{
+		position: fixed;
+		top: 80px;
+		bottom: 0;
+		background-color: salmon;
+		width: 100px;
+		height: 100px;
+		left: 0;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		clip-path: circle(0 at center);
+		transition: clip-path 1s ease-in-out;
+	}
+	.nav--input:checked + .menu{
+		background-color: salmon;
+		clip-path: circle(100% at center);
 	}
 }
