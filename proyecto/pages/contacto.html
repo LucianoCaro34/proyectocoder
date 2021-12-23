@@ -44,3 +44,379 @@
 </body>
 
 </html>
+<!---* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.body {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  color: black;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----- Inicio Web ----*/
+#paginaWeb {
+  padding: 30px 50px;
+  width: 100%;
+  height: 750px;
+  background-color: #edf1fd;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: calibri;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #F4F7FF;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  padding-top: 12px;
+  height: 20px;
+}
+.menu li a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 18px;
+}
+
+.presentacion {
+  width: auto;
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.active a,
+.menu li a:hover {
+  background-color: #292929;
+  color: white !important;
+  transition: all ease 0.4s;
+}
+
+.nombre {
+  font-family: calibri;
+  max-width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+.nombre h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  margin: 0px;
+  color: #292929;
+}
+.nombre a {
+  font-size: 25px;
+  color: #050a4d;
+  text-decoration: none;
+  border: 2px solid black;
+}
+.nombre a:hover {
+  background-color: #410941;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+.detalles {
+  color: black;
+  font-size: 18px;
+}
+
+/*----- sobre mi ----*/
+#sobreMi {
+  width: 100%;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  padding: 50px 5% 0px 5%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.sobreMi--text {
+  text-align: center;
+  font-family: calibri;
+  width: 50%;
+  padding-top: 30px;
+}
+.sobreMi--text h2 {
+  font-size: 4rem;
+  color: cornflowerblue;
+  text-shadow: 2px 2px 2px blue;
+}
+.sobreMi--text h3 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+}
+.sobreMi--text h2,
+.sobreMi--text h3 {
+  margin: 0px;
+  padding: 0px;
+}
+.sobreMi--text p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+ol li {
+  list-style: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+.informacion {
+  color: white;
+}
+.informacion div {
+  color: yellow;
+  text-align: center;
+  text-transform: uppercase;
+}
+.informacion div p {
+  color: white;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+/*proyecto---*/
+#proyectos {
+  background-color: #c5bfcc;
+  width: 100%;
+  height: 100%;
+}
+#proyectos h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #8a1818;
+  text-shadow: 2px 2px 2px red;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec {
+  width: 40%;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.cartas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20rem;
+}
+.card img {
+  object-fit: cover;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+/*contacto---*/
+#contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: relative;
+  padding: 20px 0px;
+  bottom: 0px;
+  box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+}
+#contacto form {
+  display: flex;
+  max-width: 500px;
+  background-color: #1A1A1A;
+  box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  flex-wrap: wrap;
+}
+
+.escribeme {
+  font-size: 2rem;
+  color: white;
+  font-family: calibri;
+  margin: 10px;
+  padding: 5px;
+}
+
+.contactame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+.contacto-right button {
+  width: 100%;
+  height: 30px;
+  background-color: #63D9FF;
+  font-weight: bold;
+  color: #1B1B1B;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contacto-right textarea {
+  width: 100%;
+  height: 320px !important;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #EBEBEB;
+  font-size: 16px;
+}
+
+.name,
+.email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: calibri;
+  text-align: center;
+}
+
+.name font,
+.email font {
+  color: #BFBFBF;
+  font-size: 22px;
+}
+
+.name input,
+.email input {
+  height: 30px;
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: white;
+  margin: 10px auto;
+}
+
+.mensaje {
+  margin: 20px;
+}
+.mensaje font {
+  font-size: 18px;
+  color: white;
+  font-family: calibri;
+}
+
+/*-----Curriculum-----*/
+.presentacion5 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.presentacion5 h1 {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+.presentacion5 h2 {
+  font-size: 20px;
+}
+
+.detalles3 {
+  color: white;
+}
+
+.infoIzquierda {
+  padding: 10px;
+  text-align: center;
+  background: #098f8f;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.lineaVertical {
+  border-left: thick solid white;
+}
+
+article h3 {
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+
+dt {
+  font-size: 20px;
+}
+
+.infoDerecha {
+  width: 900px;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10px;
+}
+.infoDerecha ul {
+  list-style: circle;
+}
+
+@media screen and (max-width: 800px) {
+  .sec {
+    width: 100%;
+  }
+
+  .infoDerecha {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=practicando.css.map */
+-->

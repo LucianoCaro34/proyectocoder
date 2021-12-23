@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	overflow-x: hidden;
-}
 
 .body {
 	background-color: black;
@@ -20,10 +17,12 @@ $alto:100%;
 ul {
 	list-style: none;
 }
-i{
+
+i {
 	color: black;
 	align-items: flex-end;
 }
+
 a {
 	text-decoration: none;
 }
@@ -32,25 +31,14 @@ a {
 #paginaWeb {
 	padding: 30px 50px;
 	width: $ancho;
-	height: 100vh;
+	height: 750px;
 	background-color: #edf1fd;
 }
- .nav--input{
-	display: none;
-}
-.nav--input:checked + .menu{
-	background-color: salmon;
-}
-.nav--label{
-	display: none;
-}
+
 
 .nav {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	width: $ancho;
-	height: 80px;
 	text-transform: uppercase;
 	font-family: calibri;
 	top: 0;
@@ -59,20 +47,20 @@ a {
 	background-color: #F4F7FF;
 	z-index: 1;
 }
+
 .menu {
-	display: grid;
-	grid-auto-flow: column;
-	padding-top: 7px;
-	padding-left: 20px;
-	width: auto;
-	height: 20px;
-	
-	
+	display: flex;
+	font-family: 'Courier New', Courier, monospace;
+
+
+
+
+
 
 	li a {
 		padding: 10px 15px;
 		color: #6c707c;
-		font-size: 17px;
+		font-size: 18px;
 	}
 }
 
@@ -81,7 +69,7 @@ a {
 	font-size: 25px;
 	font-weight: bold;
 	color: #292929;
-	padding-top: 10px ;
+	padding-top: 10px;
 	padding-left: 10px;
 }
 
@@ -94,7 +82,7 @@ a {
 
 .nombre {
 	font-family: calibri;
-	width: 500px;
+	max-width: 500px;
 	position: absolute;
 	left: 20%;
 	top: 50%;
@@ -111,6 +99,7 @@ a {
 		font-size: 25px;
 		color: #050a4d;
 		text-decoration: none;
+		border: 2px solid black;
 	}
 
 	a:hover {
@@ -124,8 +113,8 @@ a {
 
 
 .detalles {
-	color: #6c707c;
-	font-size: 16px;
+	color: black;
+	font-size: 18px;
 }
 
 
@@ -142,13 +131,13 @@ a {
 	justify-content: center;
 	padding: 50px 5% 0px 5%;
 	position: relative;
-	height: 100vh;
+	flex-wrap: wrap;
 }
 
 .sobreMi--text {
 	text-align: center;
 	font-family: calibri;
-	width: 50%;
+	width: 100%;
 	padding-top: 30px;
 
 	h2 {
@@ -170,7 +159,7 @@ a {
 	}
 
 	p {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		color: rgba(255, 255, 255, 0.90);
 	}
 
@@ -185,20 +174,27 @@ ol li {
 }
 
 .informacion {
-	padding-top: 80px;
-	padding-left: 100px;
+
 	color: $color1;
 
 	div {
 		color: yellow;
 		text-align: center;
 		text-transform: uppercase;
+		font-size: 20px;
 	}
 
 	div p {
 		color: $color1;
 		text-transform: lowercase;
 		text-align: center;
+		font-size: 18px;
+
+	}
+
+	div ol {
+		font-size: 18px;
+		padding-right: 4px;
 	}
 }
 
@@ -226,7 +222,7 @@ ol li {
 }
 
 .sec {
-	width: 30%;
+	width: 40%;
 	padding-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
@@ -244,6 +240,7 @@ ol li {
 	display: flex;
 	justify-content: space-around;
 	padding-top: 60px;
+	flex-wrap: wrap;
 
 }
 
@@ -251,6 +248,7 @@ ol li {
 	width: 20rem;
 
 	img {
+		object-fit: cover;
 		align-items: center;
 		height: 300px;
 		width: 300px;
@@ -262,7 +260,6 @@ ol li {
 /*contacto---*/
 #contacto {
 	width: $ancho;
-	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -275,11 +272,11 @@ ol li {
 
 	form {
 		display: flex;
-		width: 70%;
-		height: 60vh;
+		max-width: 500px;
 		background-color: #1A1A1A;
 		box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
 		border: 1px solid rgba(255, 255, 255, 0.01);
+		flex-wrap: wrap;
 	}
 }
 
@@ -297,7 +294,7 @@ ol li {
 
 
 .contactame {
-	width: 40%;
+	width: 100%;
 	height: $alto;
 	display: flex;
 	flex-direction: column;
@@ -305,7 +302,7 @@ ol li {
 }
 
 .contacto-right {
-	width: 60%;
+	width: 100%;
 	height: $alto;
 	display: flex;
 	flex-direction: column;
@@ -322,6 +319,7 @@ ol li {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	}
+
 	textarea {
 		width: 100%;
 		height: 320px !important;
@@ -335,9 +333,11 @@ ol li {
 
 .name,
 .email {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	font-family: calibri;
+	text-align: center;
 
 }
 
@@ -350,18 +350,19 @@ ol li {
 .name input,
 .email input {
 	height: 30px;
-	width: 250px;
+	width: 90%;
 	border: none;
 	outline: none;
 	background-color: transparent;
 	border-bottom: 1px solid #929292;
 	color: $color1;
-	margin: 10px 0px;
+	margin: 10px auto;
 }
 
 
 
 .mensaje {
+
 	margin: 20px;
 
 	font {
@@ -376,11 +377,12 @@ ol li {
 /*-----Curriculum-----*/
 
 .presentacion5 {
-	padding-left: 20px;
-	height: 100px;
+	height: 130px;
 	width: $ancho;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
+
+
 
 	h1 {
 		text-transform: uppercase;
@@ -388,28 +390,32 @@ ol li {
 	}
 
 	h2 {
-		font-size: 20px;
+		font-size: 22px;
+		text-decoration: underline;
+		padding-right: 18px;
 	}
 }
 
+.body2 {
+	padding: 0;
+	overflow-x: hidden;
 
+}
 
 .detalles3 {
 	color: $color1;
 }
 
 .infoIzquierda {
-	padding-top: 20px;
+
 	text-align: center;
-	background: rgb(9, 143, 143);
+	background: rgb(11, 173, 173);
 	height: $alto;
-	width: 400px;
+	width: 100%;
 	color: $color1;
 }
 
-.lineaVertical {
-	border-left: thick solid $color1;
-}
+
 
 article h3 {
 	text-decoration: underline;
@@ -423,43 +429,29 @@ dt {
 }
 
 .infoDerecha {
-	width: 250%;
+	width: 900px;
 	padding-top: 20px;
 	text-align: center;
 	padding-left: 10px;
 
-	ul {
-		list-style: circle;
-	}
 }
-@media screen and (max-width:800px){
-	#paginaWeb{
-		width: 800px;
+
+
+@media screen and (max-width:800px) {
+
+	.sec {
+		width: 100%;
 	}
-	.nav{
-		display: flex;
-		justify-content: center;
-		width: 800px;
-		position: fixed;
-		z-index: 1;
+
+	.infoDerecha {
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
+
 	}
-	.menu{
-		position: fixed;
-		top: 80px;
-		bottom: 0;
-		background-color: salmon;
-		width: 100px;
-		height: 100px;
-		left: 0;
-		display: flex;
-		justify-content: space-evenly;
-		flex-direction: column;
-		align-items: center;
-		clip-path: circle(0 at center);
-		transition: clip-path 1s ease-in-out;
-	}
-	.nav--input:checked + .menu{
-		background-color: salmon;
-		clip-path: circle(100% at center);
+
+	.body2 {
+		width: 100%;
+		overflow-x: hidden;
 	}
 }
